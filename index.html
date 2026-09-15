@@ -92,26 +92,9 @@ body {
 		</style>
 		<link id="-gd-engine-icon" rel="icon" type="image/png" href="index.icon.png" />
 <link rel="apple-touch-icon" href="index.apple-touch-icon.png"/>
-<script src="/sdk.js"></script>
-
-<script>
-window.ysdk = null;
-window.yandexLanguage = null;
-
-YaGames.init().then(function(sdk) {
-    window.ysdk = sdk;
-
-    // Автоматическое определение языка через Yandex Games SDK.
-    // Это обязательная часть требования 2.14.
-    window.yandexLanguage = sdk.environment.i18n.lang;
-
-    console.log("Yandex SDK initialized");
-    console.log("Yandex language detected:", window.yandexLanguage);
-
-}).catch(function(error) {
-    console.error("Yandex SDK error:", error);
-});
-</script>
+<link id="-gd-engine-icon" rel="icon" type="image/png" href="index.icon.png" />
+<link rel="apple-touch-icon" href="index.apple-touch-icon.png"/>
+</head>
 	</head>
 	<body>
 		<canvas id="canvas">
